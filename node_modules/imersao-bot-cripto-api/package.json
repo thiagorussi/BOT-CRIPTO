@@ -1,0 +1,23 @@
+{
+  "name": "imersao-bot-cripto-api",
+  "version": "1.0.0",
+  "description": "API para o evento Imersão Bot Cripto 2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiztools/imersao-bot-cripto-api.git"
+  },
+  "keywords": ["binance", "api"],
+  "author": "LuizTools",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luiztools/imersao-bot-cripto-api/issues"
+  },
+  "homepage": "https://github.com/luiztools/imersao-bot-cripto-api#readme",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
+}
