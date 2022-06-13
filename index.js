@@ -32,10 +32,7 @@ async function process(){
     const quantity = 0.001
     
     const response = await axios.get(`https://api.binance.com/api/v3/klines?symbol=${symbol}&interval=1m`); 
-    //--> chamada assincrona, quer dizer que pode demorar um tempo pra ter um retorno
-    //--> usamos await para que a chamada só vá ara linha de baixo, quando receber a resposta
-    //const candle = response.data[499] //--> para responder só a ultima vela
-    const closes = response.data.map(candle => parseFloat(candle[4])) //--> closes vai ser um array dos preços de fechamentos
+    const closes = response.data.map(candle => parseFloat(candle[4]))
     //-> *parseFloat* coverter essa informação em numero, pois a informação chega como texto(string)
     
     const rsi = calcRSI(closes)
@@ -50,7 +47,7 @@ async function process(){
         
     else if (rsi < 30 && !bought){ //--> se rsi < 30, comprar
         console.log('SOBREVENDIDO')
-        const buyResult = await api.buy(credentials, symbol, quantity) //-> await para aguardar resultado da chamada e depois guardar o retorno na variavel
+        const buyResult = await api.buy(credentials, symbol, quantity)
         console.log(buyResult)
         bought = true
     }
