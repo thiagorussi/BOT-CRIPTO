@@ -6,7 +6,7 @@ BOT CRIPTO
 
 <h1 align="center">
   
-<img src="https://github.com/thiagorussi/BOT-CRIPTO/blob/master/20220613_095953.gif" width="1000" height="400">
+<img src="https://github.com/thiagorussi/BOT-CRIPTO/blob/master/20220613_095953.gif" width="800" height="400">
 
 </h1>
 
